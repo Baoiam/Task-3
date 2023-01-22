@@ -4,42 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>BAOIAM</title>
   </head>
   <body>
-    <section id="home">
-      <nav>
-        <div class="logo"><a href="#home"><img src="./images/logo.png" alt="Logo" width="100px"></a></div>
-        <!-- toggle menu button -->
-        <span class="menubtn" onclick="openNav()">&#9776;</span>
 
-        <div class="navLinks">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <button type="button" id="loginbtn">Login</button>
-          </ul>
-        </div>
-      </nav>
-      <!-- responsive side navbar -->
-      <div class="sideNav" id="sidenav">
-        <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-        <button type="button">Login</button>
+    <nav>
+      <div class="logo"><a href="#home"><img src="./images/logo.png" alt="Logo" width="100px"></a></div>
+      <!-- toggle menu button -->
+      <span class="menubtn" onclick="openNav()">&#9776;</span>
+
+      <div class="navLinks">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <button type="button" id="loginbtn">Login</button>
+        </ul>
       </div>
+    </nav>
+    <!-- responsive side navbar -->
+    <div class="sideNav" id="sidenav">
+      <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <button type="button">Login</button>
+    </div>
+
+    <section id="home">
 
       <!-- Header content with banner image -->
       <div class="row">
@@ -57,17 +53,41 @@
       </div>
 
       <!-- javascript to make side menu appear -->
-      <script>
-        function openNav() {
-          document.getElementById("sidenav").style.width = "50%";
-        }
-        function closeNav() {
-          document.getElementById("sidenav").style.width = "0%";
-        }
-      </script>
     </section>
 
     <!-- /home -->
+
+<!-- about -->
+
+<section id="about">
+   <!-- <h2 class="section-heading">Contact-Us</h2> -->
+  <div class = "about-image">
+     <img src="./images/img2.png">
+  </div>
+  <div class = "about-content">
+      <h2 >About Us</h2>
+      <span class="span-underline1"><!-- line here --></span>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis aspernatur voluptas inventore ab voluptates nostrum minus illo laborum harum laudantium earum ut, temporibus fugiat sequi explicabo facilis unde quos corporis!</p>
+      <button id="aboutbtn">Read More</button>
+      <ul class = "icons">
+          <li>
+              <i class = "fa fa-twitter"></i>
+          </li>
+          <li>
+              <i class = "fa fa-facebook"></i>
+          </li>
+          <li>
+            <i class="fa fa-instagram"></i>
+          </li>
+          <li>
+            <i class="fa fa-linkedin"></i>
+          </li>
+      </ul>
+  </div>
+</section>
+</body>
+</html>
+
 
     <!-- services -->
 
@@ -220,12 +240,12 @@
 
           <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
         </address>
-        <p>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-    </p>
+        <p id="icons">
+          <i class = "fa fa-twitter"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </p>
       </div>
 
       <ul class="footer__nav">
@@ -299,5 +319,7 @@
         <p>Copyright &copy; Baoiam 2023. All rights reserved.</p>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
